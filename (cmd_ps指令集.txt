@@ -1,0 +1,61 @@
+CMD
+
+中文環境
+chcp 65001
+
+更改地區語言
+intl.cpl
+關機
+shutdown -s -t 10 => 電腦在10秒鐘之後關機。
+重新開機
+shutdown -r -t 10 => 電腦在10秒鐘之後重開
+解除安裝程式
+appwiz.cpl
+關閉服務
+service.msc
+音量混音程序
+sndvol
+裝置管理員
+devmgmt.msc
+磁碟垃圾整理
+cleanmgr
+磁碟重組工具
+defrag c: -a
+註冊表
+regedit.exe
+控制台
+taskmgr
+更換目錄
+cd /d 目錄地址
+控制台
+control
+系統內容
+sysdm.cpl
+打開系統管理員帳號(需權限)
+net user administrator /active:yes
+破解壓縮
+java -jar ZipCenOp.jar r xxx.zip
+rpboCopy
+robocopy E:\ D:\ /s /dcopy:t /xo /xa:sh /xj /unicode /eta /MOVE  
+https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/robocopy
+
+關閉hyper-v
+bcdedit /set hypervisorlaunchtype off
+開啟hyper-v
+bcdedit /set hypervisorlaunchtype auto
+
+bat檔案用ansl格式儲存，非utf8
+
+
+Powershell
+更改unicode(win10)
+Set-WinSystemLocale -SystemLocale xx-xx
+更改unicode(win7)
+[System.Threading.Thread]::CurrentThread.CurrentUICulture = New Cultureinfo("xx-xx",false)
+ja-JP 日本
+zh-CN 中國
+zh-TW 台灣
+
+
+
+
